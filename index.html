@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!-- <h2> Music Player</h2> -->
+    <audio src="songs" id="audio"></audio>
+    <div class="music-player">
+        <h1 class="music-name">Maan Meri Jaan</h1>
+        <p class="artist-name">King</p>
+        <br><br><br><br><br><br>
+        <div class="disk pause"></div>
+        <div class="song-slider">
+            <input type ="range" value ="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn backward-btn"><img src="pre.png" alt=""></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn forward-btn"><img src="nxt.png" alt=""></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>
